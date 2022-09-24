@@ -1,0 +1,38 @@
+{% extends 'base.html' %} {% block content %} {% load static %}
+<section class="content">
+    <div id="main-header" >
+        <img src="/static/img/logo-twitterblue.svg" alt="" class="main-logo" style="width: 10% ;padding:10px;">
+        <h1>Edit</h1>
+</div>
+<section class="posts-form">
+    <form  method="POST" enctype="multipart/form-data" id="editform">
+        {% csrf_token %}
+        <div class="middle">
+        <div class="userimg">
+        <img src="/static/img/sample-icon.jpeg" alt="" width="50%" style="border-radius: 50% ;">
+        
+        </div>
+        
+        <div class="values">
+        <input type="text" name="name" id="name" value="{{ post.name }}" required>
+        <textarea  type="text" name="body" id="body" value="{{ post.body }}" rows="5">{{ post.body}}</textarea>
+        {% if post.image %}
+        <img src="{{ post.image.url }}" alt="" style="width: 80%; border-radius: 5%;" class="postedimage" />
+
+        {% endif %}
+        </div>
+        </div>
+       
+        <input name="image" id="file" type="file"/>
+
+        <input type="submit" id="tweet" value="Update"/>
+
+        <a href="cancel" id="cancel">Cancel</a>
+
+    </form>
+
+    
+</section>
+</section>
+
+{% endblock %}

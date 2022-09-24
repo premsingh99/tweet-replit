@@ -1,0 +1,212 @@
+/*
+COMMON
+**************************************/
+
+.content {
+    max-width: 600px;
+    border-right: 2px solid #ccc;
+    border-left: 2px solid #ccc;
+    margin: 0 auto;
+    height: 100%;
+}
+
+body {
+    font-family: sans-serif;
+}
+/*
+Post
+**************************************/
+.posts_form {
+    display: flex;
+    padding: 20px 40px;
+    border-bottom: 1px solid #ccc;
+}
+
+.posts_form div.user_img {
+    width: 10%;
+    padding: 5px;
+}
+.posts_form div.user_img img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.posts_form div.form {
+    width: 100%;
+    padding: 5px;
+}
+
+.posts_form input {
+    width: 70%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 0px;
+}
+.posts_form div.name input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 0px;
+    background: #e6fef7;
+
+}
+
+.middle {
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+}
+.userimg {
+    width: 15%;
+    margin: 10px;
+}
+
+.userimg img {
+    width: 100%;
+}
+
+.values {
+    width: 100%;
+}
+#name {
+    width: 100%;
+    border: 0;
+    background-color: #e6fef7;
+    padding: 15px 0px;
+    border-radius: 5%;
+    
+}
+#body {
+    width: 100%;
+    border: 0;
+    padding: 15px 0px;
+    border-radius: 5%;
+}
+
+#file {
+    border: 1px solid #ccc;
+    padding : 0px;
+    margin: 5px;
+    width: 60%;
+}
+#tweet {
+    font-weight: bold;
+    width: auto;
+    padding : 10px;
+    border-radius: 5px;
+    margin: 5px;
+    align-content: right;
+    background-color: deepskyblue;
+    color: white;
+}
+
+#cancel{
+    text-decoration: none;
+    color: white;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.posts_form textarea {
+    width: 100%;
+    padding: 20px;
+    border-top: 0px;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #ccc;
+    
+}
+
+.posts ul {
+    padding: 2%;
+}
+
+.posts li {
+    display: flex;
+    border-bottom: 2px solid #ccc;
+    padding : 10px;
+    position: relative;
+}
+
+.posts li .logo {
+    flex-basis: 15%;
+}
+
+.posts li .menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    border: 1px solid black;
+    background-color: white;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 3px;
+}
+
+.posts li .menu a {
+    text-decoration: none;
+}
+
+.posts li .name_body {
+    flex-basis: 85%;
+}
+
+.posts li .logo img {
+    width: 60%;
+}
+
+.posts li .name_body .name {
+    font-weight: bold;
+}
+.posts li .name_body .datetime {
+    color: grey;
+}
+
+.posts li .menu_icon {
+    width: 20px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+
+@media screen and (max-width : 500px){
+    .posts li .name_body .name {
+        font-size: 20px;
+    }
+}
+#h{
+    display: block;
+}
+
+
+.content section.top div.logo {
+    width: 10%;
+    margin-right: 10px;
+}
+.content section.top div.logo img {
+    width: 100%;
+    
+}
+
+.content section.top div.heading {
+
+    width: 90%;
+}
+.content section.top div.heading h1 {
+    font-size: 20px;
+}
+
+.top {
+    display: flex;
+    padding: 20px 40px;
+    border-bottom: 1px solid #ccc;
+
+}
+
+#main-header {
+    border-bottom: 1px solid #ccc;
+    display: flex;
+}
